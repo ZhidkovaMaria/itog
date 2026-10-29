@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Мастер-класс по созданию вымышленных коктейлей · 30.10</title>
+  <meta name="description" content="Бар + мастер-класс «Психосоматика»: готовим вымышленные коктейли и разбираемся в себе через вкус.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="star" viewBox="0 0 100 100">
+        <path d="M50 0 L61 39 L100 50 L61 61 L50 100 L39 61 L0 50 L39 39 Z"/>
+      </symbol>
+      <symbol id="star-long" viewBox="0 0 120 100">
+        <path d="M0 55 L58 44 L70 0 L76 45 L120 38 L78 58 L92 100 L62 66 L28 92 L50 60 Z"/>
+      </symbol>
+      <symbol id="sprig" viewBox="0 0 80 50">
+        <path d="M6 44 C 24 30, 40 22, 74 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        <ellipse cx="30" cy="24" rx="12" ry="6" transform="rotate(-35 30 24)"/>
+        <ellipse cx="52" cy="10" rx="11" ry="5.5" transform="rotate(-20 52 10)"/>
+        <ellipse cx="48" cy="30" rx="10" ry="5" transform="rotate(20 48 30)"/>
+        <circle cx="70" cy="20" r="4"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- 1. Шапка -->
+  <header class="header">
+    <div class="container header__inner">
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#about">О нас</a>
+        <a href="#menu">Меню</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a class="btn btn--dark btn--sm" href="#events">Регистрация</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" style="background-image:url('img/hero.png')" role="img" aria-label="Абстрактная иллюстрация: волны бордового, синего и кремового цвета"></div>
+      <div class="container hero__inner">
+        <h1 class="hero__title" id="hero-title">
+          <b>Мастер-класс</b>
+          <span>по созданию вымышленных коктейлей</span>
+        </h1>
+        <div class="hero__bottom">
+          <a class="btn btn--dark btn--lg" href="#events">Записаться</a>
+          <p class="hero__date"><time datetime="2026-10-30">30.10</time></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="confetti" aria-hidden="true">
+        <i style="--x:5%;  --y:8%;  --s:44px; --c:var(--red)"></i>
+        <i style="--x:13%; --y:24%; --s:30px; --c:var(--ochre)"></i>
+        <i style="--x:18%; --y:6%;  --s:44px; --c:var(--blue)"></i>
+        <i style="--x:24%; --y:2%;  --s:16px; --c:var(--red)"></i>
+        <i style="--x:6%;  --y:46%; --s:44px; --c:var(--blue)"></i>
+        <i style="--x:19%; --y:40%; --s:30px; --c:var(--red)"></i>
+        <i style="--x:14%; --y:58%; --s:16px; --c:var(--ochre)"></i>
+        <i style="--x:20%; --y:62%; --s:44px; --c:var(--ochre)"></i>
+        <i style="--x:8%;  --y:72%; --s:30px; --c:var(--blue)"></i>
+        <i style="--x:25%; --y:80%; --s:16px; --c:var(--blue)"></i>
+        <i style="--x:15%; --y:84%; --s:44px; --c:var(--red)"></i>
+        <i style="--x:7%;  --y:91%; --s:16px; --c:var(--red)"></i>
+
+        <i style="--x:79%; --y:5%;  --s:44px; --c:var(--ochre)"></i>
+        <i style="--x:91%; --y:11%; --s:30px; --c:var(--blue)"></i>
+        <i style="--x:75%; --y:24%; --s:16px; --c:var(--red)"></i>
+        <i style="--x:93%; --y:23%; --s:44px; --c:var(--blue)"></i>
+        <i style="--x:79%; --y:36%; --s:44px; --c:var(--red)"></i>
+        <i style="--x:91%; --y:39%; --s:30px; --c:var(--ochre)"></i>
+        <i style="--x:83%; --y:57%; --s:30px; --c:var(--red)"></i>
+        <i style="--x:75%; --y:72%; --s:16px; --c:var(--blue)"></i>
+        <i style="--x:91%; --y:66%; --s:44px; --c:var(--blue)"></i>
+        <i style="--x:79%; --y:83%; --s:44px; --c:var(--ochre)"></i>
+        <i style="--x:90%; --y:92%; --s:16px; --c:var(--red)"></i>
+      </div>
+      <div class="container about__inner">
+        <h2 class="about__title" id="about-title">Тема мастер-класса:<br>Психосоматика</h2>
+        <p class="about__text">Ингредиенты&nbsp;— это то, что вы вспоминаете или чувствуете. Прошлое, настоящее и&nbsp;будущее раскладываются на вкусовые ощущения.</p>
+        <p class="about__text">Вы не просто смешиваете напиток, а проявляете личную психосоматику.</p>
+      </div>
+    </section>
+
+    <div class="band" role="presentation">
+      <svg class="band__sprig band__sprig--left" aria-hidden="true"><use href="#sprig"/></svg>
+      <p class="band__text">30 Октября</p>
+      <svg class="band__sprig band__sprig--right" aria-hidden="true"><use href="#sprig"/></svg>
+    </div>
+
+    <section class="menu" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <h2 class="section-title section-title--right" id="menu-title">Меню</h2>
+        <ul class="menu__list">
+          <li class="menu-card">
+            <h3 class="menu-card__name">Детство</h3>
+            <div class="menu-card__frame"><div class="menu-card__img" style="background-image:url('img/menu-1.jpg')"></div></div>
+          </li>
+          <li class="menu-card">
+            <h3 class="menu-card__name">Школа</h3>
+            <div class="menu-card__frame"><div class="menu-card__img" style="background-image:url('img/menu-2.jpg')"></div></div>
+          </li>
+          <li class="menu-card">
+            <h3 class="menu-card__name">Прогулка</h3>
+            <div class="menu-card__frame"><div class="menu-card__img" style="background-image:url('img/menu-3.jpg')"></div></div>
+          </li>
+          <li class="menu-card">
+            <h3 class="menu-card__name">Любовь</h3>
+            <div class="menu-card__frame"><div class="menu-card__img" style="background-image:url('img/menu-4.jpg')"></div></div>
+          </li>
+          <li class="menu-card">
+            <h3 class="menu-card__name">Будущее</h3>
+            <div class="menu-card__frame"><div class="menu-card__img" style="background-image:url('img/menu-5.jpg')"></div></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="ingredients" id="ingredients" aria-labelledby="ingr-title">
+      <svg class="deco-star deco-star--blue ingredients__star-l" aria-hidden="true"><use href="#star-long"/></svg>
+      <svg class="deco-star deco-star--red ingredients__star-r" aria-hidden="true"><use href="#star-long"/></svg>
+      <div class="container">
+        <h2 class="section-title section-title--center" id="ingr-title">Ингредиенты</h2>
+        <ul class="ingr__list">
+          <li class="ingr">
+            <div class="ingr__img" style="background-image:url('img/ingr-1.jpg')"></div>
+            <p><b>Слёзы радости:</b> Солёный цитрус, игристое и&nbsp;лёгкий дымный след.</p>
+          </li>
+          <li class="ingr">
+            <div class="ingr__img" style="background-image:url('img/ingr-5.jpg')"></div>
+            <p><b>Настоящее:</b> Пряная свежесть на грани кислого и&nbsp;сладкого.</p>
+          </li>
+          <li class="ingr">
+            <div class="ingr__img" style="background-image:url('img/ingr-2.jpg')"></div>
+            <p><b>Эхо пустой комнаты:</b> Лаванда, озон и&nbsp;прохладная чистая база.</p>
+          </li>
+          <li class="ingr">
+            <div class="ingr__img" style="background-image:url('img/ingr-6.jpg')"></div>
+            <p><b>Бабочки в животе:</b> Лёгкий цитрусово-имбирный эликсир с&nbsp;искорками.</p>
+          </li>
+          <li class="ingr">
+            <div class="ingr__img" style="background-image:url('img/ingr-3.jpg')"></div>
+            <p><b>Дым костра:</b> Древесные ноты, специи и&nbsp;запечённое яблоко.</p>
+          </li>
+          <li class="ingr">
+            <div class="ingr__img" style="background-image:url('img/ingr-7.jpg')"></div>
+            <p><b>Холодный пот:</b> Мятно-озоновый шот с&nbsp;лаймом и&nbsp;перцем. Резкий, отрезвляющий.</p>
+          </li>
+          <li class="ingr">
+            <div class="ingr__img" style="background-image:url('img/ingr-4.jpg')"></div>
+            <p><b>Туман:</b> Сливочно-травяной вкус с&nbsp;едва заметной кислинкой.</p>
+          </li>
+          <li class="ingr">
+            <div class="ingr__img" style="background-image:url('img/ingr-8.jpg')"></div>
+            <p><b>Ночные мысли:</b> Лаванда, мелисса и&nbsp;тёплое молоко с&nbsp;мёдом. Бархатный, сонный.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="events" id="events" aria-labelledby="events-title">
+      <div class="container events__inner">
+        <div class="events__head">
+          <h2 class="section-title" id="events-title">События этого дня</h2>
+          <div class="events__burst" aria-hidden="true">
+            <svg class="deco-star deco-star--blue"><use href="#star-long"/></svg>
+            <i style="--x:4%;  --y:2%;  --s:24px; --c:var(--red)"></i>
+            <i style="--x:86%; --y:22%; --s:24px; --c:var(--blue)"></i>
+            <i style="--x:76%; --y:58%; --s:24px; --c:var(--red)"></i>
+            <i style="--x:16%; --y:24%; --s:10px; --c:var(--blue)"></i>
+            <i style="--x:50%; --y:0%;  --s:10px; --c:var(--red)"></i>
+            <i style="--x:90%; --y:72%; --s:10px; --c:var(--red)"></i>
+            <i style="--x:80%; --y:90%; --s:10px; --c:var(--blue)"></i>
+            <i style="--x:-4%; --y:36%; --s:10px; --c:var(--ochre)"></i>
+            <i style="--x:-2%; --y:18%; --s:12px; --c:var(--red)"></i>
+            <i style="--x:88%; --y:12%; --s:12px; --c:var(--ochre)"></i>
+          </div>
+        </div>
+
+        <article class="event event--wide">
+          <div class="event__img" style="background-image:url('img/event-1.png')"></div>
+          <div class="event__body">
+            <ul class="tags">
+              <li class="tag"><time>12:30</time></li>
+              <li class="tag"><time>16:00</time></li>
+            </ul>
+            <h3 class="event__title">Три оси</h3>
+            <p class="event__text">Попробуйте себя в роли творца времени. За один вечер вы соберёте три коктейля&nbsp;— прошлое, настоящее и&nbsp;будущее,&nbsp;— где каждый глоток расскажет свою историю. Идеальный формат для тех, кто хочет не просто выпить, а&nbsp;прожить целую эпоху в&nbsp;бокале.</p>
+            <a class="btn btn--blue" href="#contacts">регистрация</a>
+          </div>
+        </article>
+
+        <div class="events__row">
+          <article class="event event--blue">
+            <div class="event__img event__img--banner" style="background-image:url('img/event-2.png')"></div>
+            <div class="event__body event__body--split">
+              <div>
+                <h3 class="event__title">Назови состояние</h3>
+                <p class="event__text">Ваши желания&nbsp;— закон для бармена. Гости сами задают ингредиенты и&nbsp;настроение, а&nbsp;команда превращает это в&nbsp;идеальный вкусовой эквивалент.</p>
+                <a class="btn btn--red" href="#contacts">регистрация</a>
+              </div>
+              <ul class="tags tags--col">
+                <li class="tag"><time>14:00</time></li>
+                <li class="tag"><time>20:30</time></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="event event--ochre event--split">
+            <div class="event__img event__img--tall" style="background-image:url('img/event-3.png')"></div>
+            <div class="event__body">
+              <ul class="tags"><li class="tag"><time>15:00</time></li></ul>
+              <h3 class="event__title">Слепой баттл</h3>
+              <p class="event__text">Соберите команду, создайте коктейль вслепую и&nbsp;угадайте, что оказалось в&nbsp;бокале, победа достанется самым внимательным.</p>
+              <a class="btn btn--red" href="#contacts">запись</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="place" aria-labelledby="place-title">
+      <div class="container place__inner">
+        <h2 class="place__title" id="place-title">Краснохолмская наб.&nbsp;1/15</h2>
+        <div class="place__pics place__pics--one">
+          <div class="place__img" style="background-image:url('img/place-1.png')" role="img" aria-label="Фото локации"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <h2 class="footer__title">Контакты</h2>
+        <address>Краснохолмская наб.&nbsp;1/15</address>
+        <a href="https://t.me/zhidkovamaria" target="_blank" rel="noopener">@zhidkovamaria</a>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__title">Об авторе</h2>
+        <p>Работа студента ВШЭ Жидковой Марии Сергеевны</p>
+        <p>1 модуль 2026 год</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
